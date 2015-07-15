@@ -3,7 +3,7 @@
 
     <string name="hello_world">Hello world</string>
     <string name="action_settings">Settings</string>
-    <string name="signIn_title">Account SignIn</string>
+    <string name="signIn_title">SignIn</string>
     <string name="email_hint">E-mail</string>
     <string name="password_hint">Password</string>
     <string name="register_hint">Not registered? SignUp</string>

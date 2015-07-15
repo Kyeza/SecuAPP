@@ -19,10 +19,13 @@ public class AccountActivity extends AppCompatActivity {
 
         ActionBar.Tab tab = actionBar.newTab()
                 .setText(R.string.profile).setTabListener(new TabListener<ProfileFragment>(this, "profile", ProfileFragment.class));
+        actionBar.addTab(tab);
         tab = actionBar.newTab()
                 .setText(R.string.cloud).setTabListener(new TabListener<CloudFragment>(this, "profile", CloudFragment.class));
+        actionBar.addTab(tab);
         tab = actionBar.newTab()
                 .setText(R.string.locator).setTabListener(new TabListener<LocatorFragment>(this, "profile", LocatorFragment.class));
+        actionBar.addTab(tab);
     }
 
     @Override
