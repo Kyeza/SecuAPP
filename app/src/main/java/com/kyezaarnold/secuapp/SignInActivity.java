@@ -15,8 +15,9 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
     }
 
-    public void goTo(View view){
-        new Intent(this, AccountActivity.class);
+    public void logIn(View view){
+        Intent intent = new Intent(this, AccountActivity.class);
+        startActivity(intent);
     }
 
     @Override

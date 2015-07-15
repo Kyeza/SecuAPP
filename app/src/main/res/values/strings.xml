@@ -4,12 +4,22 @@
     <string name="hello_world">Hello world</string>
     <string name="action_settings">Settings</string>
     <string name="signIn_title">Account SignIn</string>
-    <string name="email_hint">E-mail</string>
+    <string name="email_hint">Email</string>
+    <string name="mapLocator">LOCATOR</string>
     <string name="password_hint">Password</string>
     <string name="register_hint">Not registered? SignUp</string>
-    <string name="login_button">LOGIN</string>
-    <string name="title_activity_account">Account manager</string>
+    <string name="logIn_button">LOG IN</string>
+    <string name="title_activity_account">SECU APP</string>
     <string name="profile">Profile</string>
     <string name="cloud">Cloud store</string>
-    <string name="locator">Locator</string>
+    <string name="utility">Utilities</string>
+    <string name="map_locator">Locator</string>
+    <string-array name="values">
+        <item>Contacts</item>
+        <item>Images</item>
+        <item>Music</item>
+        <item>Video</item>
+        <item>Documents</item>
+        <item>Applications</item>
+    </string-array>
 </resources>
