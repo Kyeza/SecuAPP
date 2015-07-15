@@ -25,7 +25,7 @@
         android:id="@+id/editText"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="50dp"
         android:hint="@string/email_hint" />
 
     <EditText
@@ -51,14 +51,15 @@
         android:layout_marginTop="30dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_button"
         android:id="@+id/button"
         android:background="#ff3eb4ff"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
         android:onClick="goTo" />
 
     <ImageView
