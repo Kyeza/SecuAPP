@@ -1,9 +1,9 @@
 package com.kyezaarnold.secuapp;
 
-import android.content.Intent;
+
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -16,6 +16,7 @@ public class AccountActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(false);
 
         ActionBar.Tab tab = actionBar.newTab()
                 .setText(R.string.profile).setTabListener(new TabListener<ProfileFragment>(this, "profile", ProfileFragment.class));
@@ -24,7 +25,7 @@ public class AccountActivity extends AppCompatActivity {
                 .setText(R.string.cloud).setTabListener(new TabListener<CloudFragment>(this, "profile", CloudFragment.class));
         actionBar.addTab(tab);
         tab = actionBar.newTab()
-                .setText(R.string.locator).setTabListener(new TabListener<LocatorFragment>(this, "profile", LocatorFragment.class));
+                .setText(R.string.utility).setTabListener(new TabListener<UtilityFragment>(this, "profile", UtilityFragment.class));
         actionBar.addTab(tab);
     }
 
@@ -32,8 +33,9 @@ public class AccountActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_account, menu);
-        return true;
+    return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
